@@ -15,12 +15,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Services
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
+            policy.WithOrigins(
+                    "https://get-products-frontend.vercel.app"
+                )
+                .AllowAnyMethod()
+                .AllowAnyHeader();
         });
 });
 builder.Services.AddControllers();
@@ -28,13 +30,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
+app.UseCors("AllowFrontend");
 // Middleware
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseAuthorization();
-app.UseCors("AllowAll");
+
 app.MapControllers();
 
 app.Run();
