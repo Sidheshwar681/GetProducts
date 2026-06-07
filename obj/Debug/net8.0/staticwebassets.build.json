@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Dq2ZQrVHS5eHXz9Qs1mnM+XQSpVazPt2e4h2tMh56VQ=",
+  "Source": "GetProducts",
+  "BasePath": "_content/GetProducts",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
