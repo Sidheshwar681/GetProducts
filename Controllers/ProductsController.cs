@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GetProducts.Data;
+using GetProducts.Models;
 
 namespace GetProducts.Controllers
 {
@@ -26,6 +27,18 @@ namespace GetProducts.Controllers
             }
 
             return Ok(products);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Product>> CreateProduct(Product product)
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(
+                nameof(GetProducts),
+                new { id = product.Id },
+                product);
         }
     }
 }

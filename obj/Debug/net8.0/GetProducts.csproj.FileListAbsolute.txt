@@ -105,4 +105,4 @@ C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.
 C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.0\GetProducts.pdb
 C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.0\GetProducts.genruntimeconfig.cache
 C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.0\ref\GetProducts.dll
-C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\kokal\OneDrive\Desktop\s3Bucket\GetProducts\GetProducts\obj\Debug\net8.0\GetProducts.sourcelink.json
